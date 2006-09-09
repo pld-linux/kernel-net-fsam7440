@@ -7,6 +7,7 @@
 %define		modname	fsam7440
 %define		_rel	0.1
 Summary:	Linux kernel module for Wireless switch on AMILO M 7440
+Summary(pl):	Modu³ j±dra Linuksa dla prze³±czników bezprzewodowych w AMILO M 7440
 Name:		kernel%{_alt_kernel}-net-%{modname}
 Version:	0.3
 Release:	%{_rel}@%{_kernel_ver_str}
@@ -27,8 +28,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Linux kernel module to change wireless radio status on Fujitsu-Siemens
 AMILO M 7440 laptop.
 
+%description -n kernel%{_alt_kernel}-net-%{modname} -l pl
+Modu³ j±dra Linuksa do zmiany stanu radia bezprzewodowego w laptopach
+Fujitsu-Siemens AMILO M 7440.
+
 %package -n kernel%{_alt_kernel}-smp-net-%{modname}
 Summary:	Linux SMP kernel module for Wireless switch on AMILO M 7440
+Summary(pl):	Modu³ j±dra Linuksa SMP dla prze³±czników bezprzewodowych w AMILO M 7440
 Release:	%{_rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_smp}
@@ -38,6 +44,10 @@ Requires:	module-init-tools >= 3.2.2-2
 %description -n kernel%{_alt_kernel}-smp-net-%{modname}
 Linux SMP kernel module to change wireless radio status on
 Fujitsu-Siemens AMILO M 7440 laptop.
+
+%description -n kernel%{_alt_kernel}-smp-net-%{modname} -l pl
+Modu³ j±dra Linuksa SMP do zmiany stanu radia bezprzewodowego w
+laptopach Fujitsu-Siemens AMILO M 7440.
 
 %prep
 %setup -q -n %{modname}-%{version}
