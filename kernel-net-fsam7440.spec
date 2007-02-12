@@ -7,7 +7,7 @@
 %define		modname	fsam7440
 %define		_rel	0.1
 Summary:	Linux kernel module for Wireless switch on AMILO M 7440
-Summary(pl.UTF-8):   Moduł jądra Linuksa dla przełączników bezprzewodowych w AMILO M 7440
+Summary(pl.UTF-8):	Moduł jądra Linuksa dla przełączników bezprzewodowych w AMILO M 7440
 Name:		kernel%{_alt_kernel}-net-%{modname}
 Version:	0.3
 Release:	%{_rel}@%{_kernel_ver_str}
@@ -34,7 +34,7 @@ Fujitsu-Siemens AMILO M 7440.
 
 %package -n kernel%{_alt_kernel}-smp-net-%{modname}
 Summary:	Linux SMP kernel module for Wireless switch on AMILO M 7440
-Summary(pl.UTF-8):   Moduł jądra Linuksa SMP dla przełączników bezprzewodowych w AMILO M 7440
+Summary(pl.UTF-8):	Moduł jądra Linuksa SMP dla przełączników bezprzewodowych w AMILO M 7440
 Release:	%{_rel}@%{_kernel_ver_str}
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_smp}
